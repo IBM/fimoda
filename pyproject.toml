@@ -1,0 +1,29 @@
+[project]
+name            = "fimoda"
+version         = "0.1.0"
+description     = "Final-Model-Only Data Attribution"
+readme          = "README.md"
+license         = { text = "Apache-2.0" }
+
+authors         = [{ name = "IBM Research" }]
+maintainers     = [
+    { name = "ibm", email = "ibm@ibm.com" }
+]
+
+requires-python = ">=3.11,<3.13"
+
+# core
+dependencies = [
+	"datasets",
+	"jupyterlab",
+	"matplotlib",
+	"openpyxl",    # only for reading Excel files
+	"torch>=2.0",
+	"transformers",
+	"xlrd",    # only for reading Excel files
+	"folktables",
+	"torch_influence @ git+https://github.com/alstonlo/torch-influence",
+]
+
+[tool.setuptools.packages]
+find = {}
